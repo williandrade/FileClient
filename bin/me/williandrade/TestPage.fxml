@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.williandrade.FXMLExampleController">
+	<children>
+		<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="600.0">
+			<children>
+				<Text layoutX="223.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculator =D">
+					<font>
+						<Font size="24.0" />
+					</font>
+				</Text>
+				<TextField fx:id="firstText" layoutX="59.0" layoutY="92.0" />
+				<TextField fx:id="secondText" layoutX="376.0" layoutY="92.0" />
+            <ChoiceBox fx:id="operator" layoutX="257.0" layoutY="92.0" prefHeight="27.0" prefWidth="87.0" />
+            <Button layoutX="266.0" layoutY="181.0" mnemonicParsing="false" onAction="#calc" text="Calcular" />
+            <Button layoutX="248.0" layoutY="218.0" mnemonicParsing="false" onAction="#result" text="Ver Resultado" />
+            <Pane fx:id="resultPane" layoutY="278.0" prefHeight="122.0" prefWidth="600.0">
+               <children>
+                  <Text fx:id="resultText" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12" textAlignment="CENTER" wrappingWidth="600.0">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="244.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esse é o resultado" />
+               </children>
+            </Pane>
+			</children>
+		</AnchorPane>
+	</children>
+</VBox>
